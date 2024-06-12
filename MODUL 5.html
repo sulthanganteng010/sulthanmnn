@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perpustakaan Al-Ilmi</title>
+<link rel="stylesheet" type="text/css" href="CSS.css">
+	  </head>
+	  <body>
+		<header>
+			<ul>
+			  <li><a href="MODUL 4.html">Beranda</a></li>
+			  <li><a href="MODUL 6.html">Koleksi Buku</a>
+				
+			  </li>
+			  <li><a href="MODUL 5.html">Peminjaman</a></li>
+			  <li><a href="#">Tentang Kami</a></li>
+			</ul>
+		  
+	</header>
+		
+<body>
+	<h1>Perpustakaan Al-Ilmi</h1>
+
+	<p>Selamat datang di website Perpustakaan Al-Ilmi. Silahkan cari buku yang ingin anda baca!</p>
+
+	<script>
+		// Mendefinisikan variabel
+		var buku = ["Harry Potter", "The Lord of the Rings", "Pride and Prejudice", "Perahu Kertas", "Bumi Tere Liye"];
+		var pilihan = prompt("Silahkan pilih buku yang ingin Anda baca: \n1. Harry Potter \n2. The Lord of the Rings \n3. Pride and Prejudice \n4. Perahu Kertas \n5. Bumi Tere Liye");
+
+		// Struktur kondisi
+		if (pilihan == 1) {
+			document.write("<p>Anda memilih buku Harry Potter.</p>");
+			document.write("<p>Harry Potter adalah sebuah seri novel fantasi yang ditulis oleh penulis Inggris J.K. Rowling. Seri ini terdiri dari tujuh buku utama yang mengisahkan petualangan seorang anak yatim piatu bernama Harry Potter, yang pada usia sebelas tahun mengetahui bahwa dia sebenarnya adalah seorang penyihir.Cerita dimulai ketika Harry Potter masih bayi dan kedua orang tuanya dibunuh oleh seorang penyihir jahat bernama Lord Voldemort. Harry yang masih bayi berhasil selamat dari serangan tersebut dan kemudian diadopsi oleh keluarga Dursley, yang ternyata juga memiliki hubungan dengan dunia sihir.Ketika Harry memasuki Hogwarts School of Witchcraft and Wizardry, dia bertemu dengan dua teman baru, Ron Weasley dan Hermione Granger. Mereka kemudian bersama-sama menjalani berbagai petualangan yang melibatkan sihir, ramalan, makhluk ajaib, serta konflik antara Harry dan Voldemort yang ingin membunuhnya..</p>");
+		} else if (pilihan == 2) {
+			document.write("<p>Anda memilih buku The Lord of the Rings.</p>");
+			document.write("<p>The Lord of the Rings adalah sebuah novel epik fantasi karya penulis Inggris J.R.R. Tolkien. Cerita berfokus pada perjalanan Frodo Baggins, hobbit kecil yang ditugaskan untuk membawa cincin kekuasaan yang sangat berbahaya ke gunung tempat ia dapat dihancurkan. Cincin tersebut awalnya dimiliki oleh Sauron, sang penakluk dan penguasa jahat dari Mordor, yang menggunakan kekuatan cincin untuk memerintah dan menguasai seluruh wilayah. Berbagai karakter dan makhluk fantastis ikut terlibat dalam perjalanan Frodo, baik sebagai sekutu maupun sebagai musuh, termasuk Gandalf si penyihir, Aragorn sang pewaris kerajaan, Legolas sang elf, Gimli si kurcaci, serta Boromir dan Faramir dari Gondor. Selama perjalanan, Frodo dan teman-temannya dihadapkan dengan berbagai rintangan dan musuh yang bertujuan untuk merebut cincin tersebut. Perjalanan mereka melintasi berbagai tempat, termasuk dataran, gunung, hutan, dan sungai. Akhirnya, setelah melewati berbagai ujian dan pengorbanan, Frodo berhasil sampai ke Mordor dan menghancurkan cincin tersebut, sehingga Sauron dapat dihancurkan dan wilayah-wilayah yang dikuasainya dapat bebas..</p>");
+		} else if (pilihan == 3) {
+			document.write("<p>Anda memilih buku Pride and Prejudice.</p>");
+			document.write("<p>Pride and Prejudice adalah sebuah novel klasik yang ditulis oleh Jane Austen pada abad ke-18. Ceritanya berkisah tentang kehidupan keluarga Bennet, khususnya putri kedua mereka yang bernama Elizabeth. Elizabeth adalah seorang wanita yang pintar dan cerdas, namun terkadang pemarah dan terlalu cepat menilai orang lain. Ia bertemu dengan Mr. Darcy, seorang pria yang terlihat sombong dan menyebalkan pada awalnya, namun lambat laun Elizabeth mengetahui bahwa ia sebenarnya memiliki sifat yang baik. Ketika Elizabeth menolak lamaran Mr. Darcy, ia memulai sebuah konflik dengan keluarga Darcy dan hal ini semakin rumit ketika adik Elizabeth yang lain terlibat dengan salah satu sahabat Mr. Darcy. Meskipun awalnya saling membenci dan merendahkan satu sama lain, akhirnya Elizabeth dan Mr. Darcy saling jatuh cinta dan memutuskan untuk menikah. Novel ini juga mengeksplorasi tema-tema sosial dan kelas, seperti pentingnya pernikahan dan keluarga dalam masyarakat kelas menengah Inggris.</p>");
+		} else if (pilihan == 4) {
+			document.write("<p>Anda memilih buku Perahu Kertas.</p>");
+			document.write("<p>Perahu Kertas adalah sebuah novel romansa remaja yang ditulis oleh Dewi Lestari dan diterbitkan oleh Bentang Pustaka pada tahun 2009.Novel Perahu Kertas bertemakan persahabatan, percintaan, dan idealisme seseorang. Kisah ini berawal dengan seorang remaja laki-laki yang baru saja lulus dari Sekolah Menengah Akhir (SMA) bernama Keenan. Ia adalah laki-laki yang cerdas, mempunyai minat dan bakat dalam bidang seni melukis sangat kuat.</p>");
+		} else if (pilihan == 5) {
+			document.write("<p>Anda memilih buku The Bumi Tere Liye.</p>");
+			document.write("<p>Bumi adalah sebuah novel karya Tere Liye. Novel ini merupakan buku pertama dari serial Bumi atau Dunia Paralel dan diterbitkan pertama kali oleh Gramedia Pustaka Utama tahun 2014. Bumi Tere Liye menceritakan petualangan tiga remaja berusia 15 tahun bernama Raib, Ali, dan Seli. Mereka digambarkan sebagai remaja dengan kekuatan khusus.</p>");
+		} else {
+			document.write("<p>Pilihan Anda tidak valid.</p>");
+		}
+
+		// Struktur perulangan
+		document.write("<p>Berikut adalah daftar buku yang tersedia di websitePerpustakaan Al-Ilmi:</p>");
+		document.write("<ul>");
+		for (i = 0; i < buku.length; i++) {
+			document.write("<li>" + buku[i] + "</li>");
+		}
+		document.write("</ul>");
+		
+
+		// Operator
+		var denda = 1000;
+		var hariTerlambat = prompt("Berapa hari terlambat mengembalikan buku?");
+		var totalDenda = denda * hariTerlambat;
+		document.write("<p>Total denda yang harus Anda bayar adalah: Rp. " + totalDenda + "</p>");
+	</script>
+</body>
+</html>
+<head>
+	<style>
+		Hr {color:blue;}
+		P {margin-left:20px}
+		Body {background-image:url("hitam.JPG");}
+	</style>
+</head>

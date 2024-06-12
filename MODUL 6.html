@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profil Perpustakaan Nasional Indonesia dan Penggunaan Media</title>
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+</head>
+<body>
+  <header>
+      <ul>
+        <li><a href="MODUL 4.html">Beranda</a></li>
+        <li><a href="MODUL 6.html">Koleksi Buku</a>
+          
+        </li>
+        <li><a href="MODUL 5.html">Peminjaman</a></li>
+        <li><a href="MODUL 1.html">Tentang Kami</a></li>
+      </ul>
+    
+  </header>
+  <html>
+<head>
+	
+	<!-- Load jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- Load DataTables plugin -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+	<!-- Load Animate.css plugin -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<!-- Custom CSS -->
+    <style>table{width:100%;border-collapse:collapse}th,td{padding:8px;text-align:left;border-bottom:1px solid #ddd}tr:hover{background-color:#ff0}.highlight{background-color:#fff}body{background-color:#f5f5dc}</style>
+	
+</head>
+<body>
+    <h1 style="text-align: center; color: #537188; background: white;">Perpustakaan Al-ilmi</h1>
+    <h3 style="text-align: center; color: black;">Selamat datang di Perpustakaan Al-ilmi. Dibawah ini merupakan beberapa koleksi buku yang dimiliki oleh Perpustakaan Al-ilmi.<br> Ketik judul buku, Penulis, atau tahun terbit pada kolom Search untuk mempercepat pencarian!</h3>
+        <table id="library-table">
+		<thead>
+			<tr>
+				<th>Judul Buku</th>
+				<th>Penulis</th>
+				<th>Tahun Terbit</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Belajar HTML, CSS, dan JavaScript</td>
+					<td>Wahana Komputer</td>
+				<td>2021</td>
+			</tr>
+			<tr>
+				<td>PHP & MySQL: Novice to Ninja</td>
+				<td>Tom Butler dan Kevin Yank</td>
+				<td>2020</td>
+			</tr>
+			<tr>
+				<td>JavaScript and jQuery: Interactive Front-End Web Development</td>
+				<td>Jon Duckett</td>
+				<td>2014</td>
+			</tr>
+			<tr>
+				<td>Web Design with HTML, CSS, JavaScript and jQuery Set</td>
+				<td>Jon Duckett</td>
+				<td>2014</td>
+			</tr>
+			<tr>
+				<td>Node.js in Action</td>
+				<td>Mike Cantelon, Marc Harter, T.J. Holowaychuk, dan Nathan Rajlich</td>
+				<td>2014</td>
+			</tr>
+			<tr>
+				<td>The Handmaid's Tale</td>
+				<td>Margaret Atwood</td>
+				<td>1985</td>
+			</tr>
+			<tr>
+				<td>The Paris Library</td>
+				<td>Janet Skeslien Charles</td>
+				<td>2021</td>
+			</tr>
+			<tr>
+				<td>The Plot</td>
+				<td>Jean Hanff Korelitz</td>
+				<td>2021</td>
+			</tr>
+			<tr>
+				<td>The Code Breaker</td>
+				<td>Jennifer Doudna, Gene Editing, and the Future of the Human Race oleh Walter Isaacson </td>
+				<td>2021</td>
+			</tr>
+			<tr>
+				<td>This Book Is Overdue! : How Librarians and Cybrarians Can Save Us All!</td>
+				<td>Marilyn Johnson</td>
+				<td>2010</td>	
+			</tr>
+			<tr>
+				<td>The Bad-Ass Librarians of Timbuktu and Their Race to Save the World's Most Precious Manuscripts</td>
+				<td>MJoshua Hammer</td>
+				<td>2016</td>
+			</tr>
+			<tr>
+				<td>The Public Library</td>
+				<td>Robert Dawson</td>
+				<td>2014</td>
+			</tr>
+			<tr>
+				<td>The Book Thieves: The Nazi Looting of Europe's Libraries and the Race to Return a Literary Inheritance </td>
+				<td>Anders Rydell</td>
+				<td>2017</td>
+			</tr>
+			<tr>
+				<td>Secret of Divine Love</td>
+				<td>A. Helwa</td>
+				<td>2020</td>
+			</tr>
+			<tr>
+				<td>Filosofi Teras</td>
+				<td>Henry Manampiring</td>
+				<td>2018</td>
+			</tr>
+			<tr>
+				<td>Sebuah Seni Untuk Bersikap Bodo Amat</td>
+				<td>Mark Manson</td>
+				<td>2016</td>
+			</tr>
+			<tr>
+				<td>Bumi</td>
+				<td>Tere Liye</td>
+				<td>2015</td>
+			</tr>
+			<tr>
+				<td>Laskar Pelangi</td>
+				<td>Andrea Hirata</td>
+				<td>2005</td>
+			</tr>	
+		</tbody>
+	</table>
+	<!-- Custom jQuery -->
+	<script>
+		$(document).ready(function() {
+			// Initialize DataTables plugin on library table
+			$("#library-table").DataTable({
+				paging: false,
+				searching: true,
+				ordering: true
+			});
+			
+			// Highlight table row on mouseover
+			$("tr").mouseover(function() {
+				$(this).addClass("highlight");
+			});
+			$("tr").mouseout(function() {
+				$(this).removeClass("highlight");
+			});
+			
+			// Add animation effect on table heading
+			$("th").addClass("animate_animated animate_bounce");
+		});
+	</script>
+
+    <footer>
+        <p style="text-align: center; color: #537188; background: white;">&copy; 2023 Website Ridwan Yahya. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+</body>
+</html>

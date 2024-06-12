@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir keanggotaan perpustakaan</title>
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+</head>
+<body>
+  <header>
+      <ul>
+        <li><a href="MODUL 4.html">Beranda</a></li>
+        <li><a href="MODUL 6.html">Koleksi Buku</a>
+          
+        </li>
+        <li><a href="MODUL 5.html">Peminjaman</a></li>
+        <li><a href="MODUL 1.html">Tentang Kami</a></li>
+      </ul>
+    
+  </header>
+<body>
+    <h2 align="center">Formulir Keanggotaan Perpustakaan</h2>
+    <table border="1">
+        <tr>
+            <th colspan="2">Formulir Anggota Perpustakaan Program Studi Perpustakaan dan Sains Informasi</th>
+        </tr>
+        <tr>
+            <td>
+                NAMA<br>
+                NIM<br>
+                ALAMAT<br>
+                JENIS KELAMIN<br>
+                EMAIL<br>
+                NO.HP<br>
+                TEMPAT LAHIR<br>
+                TANGGAL LAHIR
+            </td>
+            <td>
+                Sulthan Abdharu Simanjuntak<br>
+                210709014<br>
+                Jalan Abdul Hakim, Medan Selayang, Sumatera Utara<br>
+                Laki-laki<br>
+                sulthansimanjuntak@gmail.com<br>
+                085349464730<br>
+                Pematangsiantar<br>
+                09 September 2003
+            </td>
+        </tr>
+    </table>
+
+    <h2>Form Perpanjangan Masa Pinjam</h2>
+    <p>
+        Pengajuan Perpanjangan Masa Pinjam Buku secara online hanya akan dilayani apabila dilakukan pada hari dan jam kerja (Senin s.d Jumat pukul 08.00-15.30), peminjaman belum melebihi tenggat waktu pengembalian, serta hanya dapat dilakukan satu kali di setiap peminjaman untuk buku yang sama.
+    </p>
+    <form action="contact.php" method="POST">
+        <fieldset>
+            <legend>Form Perpanjangan Buku</legend>
+            <p>
+                <label>Member ID:</label>
+                <input type="text" name="member_id">
+            </p>
+            <p>
+                <label>Kode Eksemplar:</label>
+                <input type="text" name="kode_eksemplar">
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Submit">
+            </p>
+        </fieldset>
+    </form>
+
+    <h2>Form Pemesanan Buku</h2>
+    <form action="contact.php" method="POST">
+        <fieldset>
+            <legend>Form Pemesanan Buku</legend>
+            <p>
+                <label>Nama Customer:</label>
+                <input type="text" name="nama_customer">
+            </p>
+            <p>
+                <label>Tanggal Pemesanan:</label>
+                <input type="date" name="tanggal_pemesanan">
+            </p>
+            <p>
+                <label>Alamat:</label>
+                <input type="text" name="alamat">
+            </p>
+            <p>
+                <label>Judul Buku:</label>
+                <input type="text" name="judul_buku">
+            </p>
+            <p>
+                <label>Pengarang:</label>
+                <input type="text" name="pengarang">
+            </p>
+            <p>
+                <label>Jumlah Buku:</label>
+                <input type="text" name="jumlah_buku">
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Send">
+            </p>
+        </fieldset>
+    </form>
+
+    <h2>Tabel Koleksi Buku</h2>
+    <table border="1">
+        <tr>
+            <th>Judul</th>
+            <th>No. Akses</th>
+            <th>No. Panggil</th>
+            <th>Pengarang</th>
+            <th>Subjek</th>
+            <th>Nama Penerbit</th>
+            <th>Tahun Terbit</th>
+        </tr>
+        <tr>
+            <td>Pengantar Ilmu Perpustakaan</td>
+            <td>17002470</td>
+            <td>020 Sul p</td>
+            <td>Sulistyo Basuki</td>
+            <td>Library Science</td>
+            <td>Gramedia Press</td>
+            <td>1991</td>
+        </tr>
+        <tr>
+            <td>Filsafat ilmu pengetahuan : filsafat, ilmu pengetahuan, dan peradaban</td>
+            <td>00002749304</td>
+            <td>121 JAL f</td>
+            <td>Prof. Dr. H. Jalaluddin</td>
+            <td>Pengetahuan, Teori</td>
+            <td>Rajawali Pers</td>
+            <td>2019</td>
+        </tr>
+        <tr>
+            <td>Analisis dan perancangan sistem informasi</td>
+            <td>19006640</td>
+            <td>658.403 8 Nug a</td>
+            <td>Adi Sulistyo Nugroho</td>
+            <td>Management Information Systems</td>
+            <td>Trans Tekno</td>
+            <td>2017</td>
+        </tr>
+    </table>
+</body>
+</html>
